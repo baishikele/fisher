@@ -1,0 +1,5 @@
+PER_PAGE = 15
+# 上传一本书获得的鱼豆
+BEANS_UPLOAD_ONE_BOOK = 0.5
+# 首页多少条数据
+RECENT_BOOK_PER_PAGE = 30

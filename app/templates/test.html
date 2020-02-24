@@ -1,0 +1,35 @@
+
+{% extends 'layout.html'%}
+
+{% block content %}
+    {{ super() }}
+
+以下是访问字典
+{{data.name}}
+
+以下是if判断
+{% if data.age<18 %}
+    小于18岁
+{% elif data.age >= 18 and data.age <50 %}
+    大于18岁，小于50岁
+{% else %}
+    大于50岁
+{% endif %}
+
+以下是遍历字典
+{% for key, value in data.items() %}
+{{ key }}
+{{ value }}
+{% endfor %}
+
+以下是for in
+{% for datum in collection %}
+{{ datum }}
+{% endfor %}
+
+以下是flash
+    {% set message = get_flashed_messages() %}
+    {{ message }}
+
+{% endblock %}
+
